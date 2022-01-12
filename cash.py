@@ -5,14 +5,20 @@ def islem_sec():
     if i == 2:
         pass
 
+
 def para_yatir():
     ekle = int(input("yatirmak istediginiz miktari giriniz: "))
     bakiye += ekle
     print("Yeni bakiyeniz: ", bakiye)
-    exit()
+
+
+def para_cek():
+    cek = int(input("cekmek istediginiz miktari giriniz: "))
+    bakiye -= cek
+    print("Yeni bakiyeniz: ", bakiye)
 
 bakiye = 100
-print("Bankaya hos geldiniz, bakiyeniz: ", bakiye)
-
-
+print("Bankaya hos geldiniz.")
 islem_sec()
+
+print("Guncel bakiyeniz: ", bakiye)
