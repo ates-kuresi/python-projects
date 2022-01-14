@@ -4,21 +4,26 @@ def islem_sec():
         para_yatir()
     if i == 2:
         pass
+    if i == 3:
+        para_cek()
 
 
 def para_yatir():
     ekle = int(input("yatirmak istediginiz miktari giriniz: "))
-    bakiye += ekle
+    bakiye = int(ekle) + int(bakiye)
     print("Yeni bakiyeniz: ", bakiye)
 
 
-def para_cek():
+def para_cek(hesap, cek):
     cek = int(input("cekmek istediginiz miktari giriniz: "))
-    bakiye -= cek
+    bakiye = int(bakiye) - int(ekle)
     print("Yeni bakiyeniz: ", bakiye)
 
-bakiye = 100
-print("Bankaya hos geldiniz.")
-islem_sec()
+hesap = {
+    'ad' : 'Burak',
+    'bakiye' : 100
+}
 
-print("Guncel bakiyeniz: ", bakiye)
+print(f'Merhaba', {hesap['ad']}, "Guncel bakiyeniz: ", {hesap['bakiye']})
+
+islem_sec()
